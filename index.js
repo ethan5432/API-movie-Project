@@ -13,11 +13,11 @@ async function getMovie() {
               <h3>Movies Title</h3>
                 <p><b>Release:</b> email@email.com</p>
                 <p><b>Rating:</b> 0000000000</p>
-                <p><b>RunTime:</b> <a href="https://website.website" target="_blank">website.website</a></p>
-                <p><b>Genre:</b> <a href="https://website.website" target="_blank">website.website</a></p>
-                <p><b>Actors:</b> <a href="https://website.website" target="_blank">website.website</a></p>
-                <p><b>Description:</b> <a href="https://website.website" target="_blank">website.website</a></p>
-                <p><b>Awards:</b> <a href="https://website.website" target="_blank">website.website</a></p>
+                <p><b>RunTime:</b>Info</p>
+                <p><b>Genre:</b>Info</p>
+                <p><b>Actors:</b>Info</p>
+                <p><b>Description:</b>Info</p>
+                <p><b>Awards:</b>Info</p>
             </div>
           </div>`
       )
