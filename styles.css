@@ -22,10 +22,17 @@ NAV BAR
   display: flex;
   list-style-type: none;
   margin-right: 20px;
+  
+text-decoration: none;
 }
 
 .nav__link {
   padding: 16px;
+  color: #fff !important;
+  z-index: 3;
+   font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .movie__search--container {
@@ -57,6 +64,7 @@ NAV BAR
   max-width: 600px;
   position: relative;
   border: #fff;
+  transition: all 500ms ease;
   border-radius: 50px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -65,8 +73,9 @@ NAV BAR
   font-weight: 700;
 }
 
-form:hover {
-  border: #5d3eff;
+.form__control:hover {
+  border:1px solid #5d3eff;
+  transition: all 500ms ease;
 }
 
 .search__btn {
