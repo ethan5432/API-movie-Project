@@ -5,31 +5,19 @@ const movieTitle = 'Jaws'
 const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`
 
 async function getMovie() {
-     movieData = (await fetch(apiUrl)).json();
-    console.log(movieData)
-
+    const movies = await fetch(apiUrl);
+   const movieData = await movies.json();
+    console.log(
+        movieData.map((movie) => ` <div class="user-card">
+    <div class="user-card__container">
+        <h3>Movies Name</h4>
+        <p><b>Email:</b> email@email.com</p>
+        <p><b>Phone:</b> 0000000000</p>
+        <p><b>Website:</b> <a href="https://website.website" target="_blank">website.website</a></p>
+    </div>
+    </div>`)
+        .join("")
+    );
 }
 
 getMovie();
-
-// async function getMovie() {
-//   const apiKey = "2f7d241"; // Replace with your OMDB API key
-//   const movieTitle = "The Matrix"; // Replace with the title of the movie you want to retrieve
-
-//   const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&t=${movieTitle}`;
-
-//   try {
-//     const response = await fetch(apiUrl);
-
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-
-//     const movieData = await response.json();
-//     console.log(movieData);
-//   } catch (error) {
-//     console.error("Error:", error);
-//   }
-// }
-
-// getMovie();
