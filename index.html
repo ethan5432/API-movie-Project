@@ -11,7 +11,7 @@
     <section id="nav">
     <div class="container">
         <div class="row">
-            <nav class="nav">
+            <nav class="nav__container">
                 <figure>
                 <img id="personal-logo" src="">
                 </figure>
@@ -28,13 +28,15 @@
                
                 </ul>
             </nav>
-        <h1 class="search__title">Movies</h1>
+            <div class="movie__search--container">
+        <h1 class="movie__search--title">Movies</h1>
+        <div class="input__wrapper">
         <form id="movie__form">
-            <div class="form__group">
                 <input class="form__control" type="text" placeholder="Movie...">
                 <button class="search__btn fetch__movie--btn">Search Movies</button>
-            </div>
         </form>
+         </div>
+        </div>
     </div>
     </div>
     </section>
