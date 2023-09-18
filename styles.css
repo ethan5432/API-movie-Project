@@ -1,0 +1,16 @@
+* {
+    margin: 0, auto;
+    padding: 0;
+}
+
+/* 
+NAV BAR
+*/
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+    
+}
