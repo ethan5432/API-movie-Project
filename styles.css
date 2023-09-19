@@ -1,7 +1,8 @@
 * {
-  margin: 0, auto;
+  margin: 0;
   padding: 0;
   color: #fff;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,13 +27,18 @@ p {
 
 
 .header__container {
-  margin: 0 auto;
-  padding-bottom: 20px;
+  margin-bottom: 0 ;
+  padding-bottom: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  max-width: 1200px;
   max-height: 1000px;
   height: 100%;
   background-image: url(./daniele-levis-pelusi-5tWA1mXjTEk-unsplash.jpg);
+  background-size: cover;
+  z-index: -1;
 }
 
 /* 
@@ -73,6 +79,8 @@ NAV BAR
   align-items: center;
   flex-direction: column;
   margin: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   z-index: 2;
 }
 
@@ -81,9 +89,14 @@ NAV BAR
 }
 
 #movie__form {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
 }
 
 .input__wrapper {
+ 
 }
 
 .placeholder {
@@ -105,10 +118,7 @@ NAV BAR
   font-weight: 700;
 }
 
-.form__control:hover {
-  border: 3px solid #5d3eff;
-  transition: all 500ms ease;
-}
+
 
 .search__btn {
   position: absolute;
@@ -119,6 +129,7 @@ NAV BAR
   max-height: 48px;
   min-height: 48px;
   padding: 12px 40px;
+  margin-top: 112px;
   align-items: center;
   border: 2px #5d3eff;
   border-radius: 50px;
