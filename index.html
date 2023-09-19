@@ -32,8 +32,8 @@
         <h1 class="movie__search--title">OMDB</h1>
         <div class="input__wrapper">
         <form id="movie__form">
-                <input class="form__control" type="text" placeholder="Movie...">
-                <button class="search__btn fetch__movie--btn">Search Movies</button>
+                <input class="form__control" type="search" onchange="onSearchChange(movie)" placeholder="Movie...">
+                <button class="search__btn">Search Movies</button>
         </form>
          </div>
         </div>
@@ -48,15 +48,11 @@
           <div class="movie-card">
             <div class="movie-card__container">
             <figure>
-                <img class="poster__img">
+                <!-- <img class="posterImage" src=${movie.Poster}> -->
             </figure>
               <h3>${movie.Title}</h3>
                 <p><b>Release:</b> ${movie.Year}</p>
-                <p><b>Rating:</b> ${movie.Title}</p>
-                <p><b>RunTime:</b>${movie.imdbID}</p>
-                <p><b>Genre:</b>${movie.Title}</p>
-                <p><b>Actors:</b>${movie.Title}</p>
-                <p><b>Description:</b>${movie.Title}</p>
+                <p><b>Type:</b>${movie.Type}</p>
                 <p><b>IMDB ID:</b>${movie.imdbID}</p>
             </div>
           </div>
