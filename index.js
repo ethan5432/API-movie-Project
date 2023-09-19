@@ -30,7 +30,8 @@ function movieHTML(movie) {
 }
 
 function onSearchChange(movie) {
-  const movieQuery = movie.target.value;
+  const movieQuery = movie.target.event;
+  getMovie(movie);
 }
 
 onSearchChange();
