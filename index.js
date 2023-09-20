@@ -4,8 +4,14 @@ const apiKey = "2f7d241";
 
 
 
-function onSearchChange(event) {
-  console.log(event.target.value)
+async function onSearchChange(event) {
+  const input = event.target.value;
+  const movies = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${input}`);
+  const movieData = await movies.json();
+  const movieListEl = document.querySelector(".movie-list");
+  movieListEl.innerHTML = movieData.Search.map((movie) =>
+    movieHTML(movie)
+  ).join("");
 }
 
 
