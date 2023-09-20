@@ -14,11 +14,11 @@ async function onSearchChange(event) {
   ).join("");
 }
 
-function handle(event) {
-    if (event.key === "Enter") {
-        // Submit form
-    }
-};
+// function handle(event) {
+//     if (event.key === "Enter") {
+//         // Submit form
+//     }
+// };
 
 
 async function getMovie() {
