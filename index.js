@@ -6,7 +6,7 @@ const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
 
 async function onSearchChange(event) {
   const input = event.target.value;
-  const movies = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${input}`);
+  const movies = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${input}`);
   const movieData = await movies.json();
   const movieListEl = document.querySelector(".movie-list");
   movieListEl.innerHTML = movieData.Search.map((movie) =>
