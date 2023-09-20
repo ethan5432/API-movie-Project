@@ -5,6 +5,7 @@ const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
 
 
 async function onSearchChange(event) {
+  
   const input = event.target.value;
   const movies = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${input}`);
   const movieData = await movies.json();
@@ -17,16 +18,13 @@ async function onSearchChange(event) {
 
 
 function handle(event) {
+  event.preventDefault();
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent the form from submitting via Enter key
     onSearchChange(event);
   }
 };
 
-
-function main() {
-console.log(handle(event));
-}
 
 
 
