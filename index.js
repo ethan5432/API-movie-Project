@@ -7,7 +7,6 @@ const apiKey = "2f7d241";
 function onSearchChange(event) {
   console.log(input.target.value)
 }
-onSearchChange();
 
 
 // async function getMovie() {
