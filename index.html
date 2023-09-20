@@ -32,10 +32,11 @@
         <h1 class="movie__search--title">OMDB</h1>
         <div class="input__wrapper">
         <form id="movie__form">
-                <input class="form__control" type="search" 
+                <input id="form__control" type="search" 
                  onkeypress="handle(event)" placeholder="Movie...">
-                <button class="search__btn" onclick="onSearchChange(event)">Search Movies</button>
+                  <button class="search__btn" onclick="handle(event)">Search Movies</button>
         </form>
+        
          </div>
         </div>
     </div>

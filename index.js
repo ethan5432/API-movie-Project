@@ -14,12 +14,20 @@ async function onSearchChange(event) {
   ).join("");
 }
 
+
+
 function handle(event) {
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent the form from submitting via Enter key
     onSearchChange(event);
   }
 };
+
+
+function main() {
+console.log(handle(event));
+}
+
 
 
 async function getMovie() {

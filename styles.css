@@ -96,6 +96,9 @@ NAV BAR
 }
 
 .input__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
  
 }
 
@@ -103,7 +106,7 @@ NAV BAR
   margin-left: 10px;
 }
 
-.form__control {
+#form__control {
   padding: 20px;
   width: 100%;
   max-width: 600px;
@@ -128,14 +131,16 @@ NAV BAR
   cursor: pointer;
   max-height: 48px;
   min-height: 48px;
+  margin-top: 132px;
   padding: 12px 40px;
-  margin-top: 112px;
+ 
   align-items: center;
   border: 2px #5d3eff;
   border-radius: 50px;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
+  z-index: 50;
 }
 
 .search__btn:hover {
