@@ -1,6 +1,6 @@
 const apiKey = "2f7d241";
-// const movieTitle = "jaws";
-// const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
+const movieTitle = "jaws";
+const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
 
 
 
@@ -15,16 +15,16 @@ async function onSearchChange(event) {
 }
 
 
-// async function getMovie() {
-//   const movies = await fetch(apiUrl);
-//   const movieData = await movies.json();
-//   const movieListEl = document.querySelector(".movie-list");
-//   movieListEl.innerHTML = movieData.Search.map((movie) =>
-//     movieHTML(movie)
-//   ).join("");
-// }
+async function getMovie() {
+  const movies = await fetch(apiUrl);
+  const movieData = await movies.json();
+  const movieListEl = document.querySelector(".movie-list");
+  movieListEl.innerHTML = movieData.Search.map((movie) =>
+    movieHTML(movie)
+  ).join("");
+}
 
-// getMovie();
+getMovie();
 
 function movieHTML(movie) {
   return `
