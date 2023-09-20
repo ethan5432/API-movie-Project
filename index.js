@@ -1,6 +1,6 @@
 const apiKey = "2f7d241";
 const movieTitle = "jaws";
-const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
+const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&s=${movieTitle}`;
 
 
 
