@@ -18,7 +18,6 @@ async function onSearchChange(event) {
 
 
 function handle(event) {
-  event.preventDefault();
   if (event.key === "Enter") {
     event.preventDefault(); // Prevent the form from submitting via Enter key
     onSearchChange(event);
