@@ -31,9 +31,9 @@
             <div class="movie__search--container">
         <h1 class="movie__search--title">OMDB</h1>
         <div class="input__wrapper">
-        <form id="movie__form">
+        <form id="movie__form" onsubmit="handle(event)">
                 <input id="form__control" type="search" 
-                 onkeypress="handle(event)" placeholder="Movie...">
+                  placeholder="Movie...">
                   <button class="search__btn" >Search Movies</button>
         </form>
          </div>
